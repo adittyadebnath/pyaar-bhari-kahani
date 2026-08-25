@@ -1,6 +1,6 @@
 const PHOTOS = Array.from({ length: 30 }, (_, index) => ({
   id: index + 1,
-  src: `images/image${index + 1}.jpg`,
+  src: `image${index + 1}.jpg
 }));
 
 const HEARTS = ["❤️", "💕", "💖", "💗", "💓", "💘"];
