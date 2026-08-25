@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart to Heart | Photo Pair Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+  <div class="page-veil" id="page-veil" aria-hidden="true"></div>
+  <div class="birthday-intro" id="birthday-intro">
+    <div class="birthday-card">
+      <span class="birthday-kicker">A little surprise for you</span>
+      <span class="birthday-heart" aria-hidden="true">💖</span>
+      <h1>Happy Birthday!</h1>
+      <p>Today is all about celebrating you and the beautiful memories we share. I have created a game for you, please click the button to start playing.</p>
+      <button id="enter-game" type="button">Open Your Birthday Memories</button>
+    </div>
+  </div>
+
+<main class="page">
+		<header class="intro">
+			<div><p class="eyebrow">A little memory game</p><h1>Heart to<br>Heart</h1></div>
+			<p class="description">Find the photo pairs hiding in a heart. Unleash our precious memories and discover the love that binds us together. <br>Click on a card to reveal the photo, then find its matching pair. <br>Match all pairs to win the game!</p>
+		</header>
+		<section class="game" aria-label="Photo pair memory game">
+			 <div class="stats">
+    <div class="stat">Moves: <strong id="moves">0</strong></div>
+    <div class="stat">Pairs: <strong id="pairs">0</strong> / 30</div>
+  </div>
+
+  <div class="game-board" id="game-board"></div>
+
+  <div class="controls">
+    <button id="restart">New Game</button>
+  </div>
+
+  <div class="heart-container" id="heart-container"></div>
+
+  <div class="win-overlay" id="win-overlay">
+    <div class="win-card">
+      <span class="big-heart">💖</span>
+      <h2>You did it!</h2>
+      <p id="win-stats">You won!</p>
+      <p class="win-next">Taking you to our memories…</p>
+      <div class="win-actions">
+        <button id="see-memories" type="button">Go now</button>
+        <button id="play-again" type="button" class="button-secondary">Stay and play again</button>
+      </div>
+    </div>
+  </div>
+		</section>
+	</main>
+	<script src="game.js"></script>
+
+
+</body>
+</html>

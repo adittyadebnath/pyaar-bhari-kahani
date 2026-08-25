@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Memories | Heart to Heart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    if (sessionStorage.getItem("memoryTransition") === "1") {
+      document.documentElement.classList.add("is-arriving");
+    }
+  </script>
+</head>
+<body class="memories-body">
+  <div class="page-veil" id="page-veil" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="memory-hearts" id="memory-hearts" aria-hidden="true"></div>
+
+  <header class="memories-hero">
+    <p class="eyebrow">After every match</p>
+    <h1>Every pair was<br>a piece of us</h1>
+    <p class="memories-lead">Scroll slowly. These are the same photos you just found in the heart — now told as a little story, one memory at a time.</p>
+    <span class="scroll-hint">↓</span>
+  </header>
+
+  <main class="memories-main">
+    <div class="timeline" id="timeline"></div>
+
+    <section class="closing-letter" aria-label="Birthday letter">
+      <span class="birthday-kicker">A note for your birthday</span>
+      <h2>Happy Birthday</h2>
+      <p>Thank you for playing, for remembering, and for being the reason these photos exist. I hope today feels as warm as every moment we have already shared — and as bright as the ones still waiting for us.</p>
+      <p class="letter-signoff">With all my love.</p>
+      <button id="open-celebrate" type="button">Come cut the cake</button>
+    </section>
+  </main>
+
+  <nav class="memories-nav">
+    <a href="index.html">Play the heart game again</a>
+  </nav>
+
+  <script src="memories.js"></script>
+</body>
+</html>
