@@ -1,5 +1,5 @@
 const MEMORIES = [
-  { caption: "TA look I still remember, even with my eyes closed." },
+  { caption: "A look I still remember, even with my eyes closed." },
   { caption: "The first spark — where our story quietly began." },
   { caption: "The kind of laugh that makes the whole room softer." },
   { caption: "A little adventure, just the two of us." },
@@ -47,7 +47,7 @@ function renderTimeline() {
     article.innerHTML = `
       <div class="memory-dot" aria-hidden="true"></div>
       <figure class="polaroid">
-        <img src="images/image${index + 1}.jpg" alt="Memory ${number}" loading="lazy">
+        <img src="image${index + 1}.jpg" alt="Memory ${number}" loading="lazy">
         <figcaption>
           <span class="memory-number">${number}</span>
           <p>${memory.caption}</p>
